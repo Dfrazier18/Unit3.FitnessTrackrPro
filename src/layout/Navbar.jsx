@@ -11,7 +11,7 @@ export default function Navbar() {
       <nav>
         <NavLink to="/">Activities</NavLink>
         {token ? (
-          <NavLink onClick={logout()}>Logout</NavLink>
+          <button onClick={logout}>Logout</button>
         ) : (
           <>
             <NavLink to="/register">Register</NavLink>
